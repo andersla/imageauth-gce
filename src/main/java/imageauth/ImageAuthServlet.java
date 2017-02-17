@@ -100,12 +100,6 @@ public class ImageAuthServlet extends HttpServlet {
 				String projectId = props.getProperty("projectid"); 
 				Project project = resourceManager.get(projectId);
 				
-//				Iterator<Project> projectIterator = resourceManager.list().iterateAll();
-//				System.out.println("Projects I can view:");
-//				while (projectIterator.hasNext()) {
-//				  System.out.println(projectIterator.next().projectId());
-//				}
-				
 				// Get the project's policy
 				Policy policy = project.getPolicy();
 
